@@ -442,6 +442,7 @@
 			margin-bottom: 20px;
 			font-family: @b-ff-3;
 			font-size: @b-fs - 2;
+			min-height: 35px;
 		}		
 	}
 	&text{
@@ -945,6 +946,25 @@
 		z-index: 2;
 		padding-top: 35px;
 		padding-bottom: 35px;
+		&.is--objacts{
+			border: 1px solid @blue-light;
+			background-color: fadeout(@blue-light, 70%);
+			padding: 20px 25px;
+			@media @media-point-screen {
+				padding: 2vw 2vw;
+			}
+		}
+		&.is--business{
+		    border-bottom: 3px solid @b-color-a;
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: cover;
+		    background-attachment: fixed;
+			@media @media-point-screen {
+				padding-top: 2vw;
+				padding-bottom: 4.3vw; 
+			}
+		}
 	}
 	&panel-inner{
 	}
@@ -958,9 +978,31 @@
 				max-width: 370px;
 			}
 		}
+		&.is--business{
+			border: 10px solid fadeout(@white, 90%);
+			border-radius: 12px;
+			max-width: 830px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	&inner{
-
+		&.is--business{
+			background-color: fadeout(@white, 20%);
+			padding: 20px;
+			@media @media-point-screen {
+				padding: 2.9vw;
+			}			
+		}
+	}
+	&wrapper{
+		&.is--business{
+			@media @media-point-notsmart {
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 370px;
+			}		
+		}
 	}
 	&row{
 		margin-top: -20px;
@@ -3690,6 +3732,36 @@ body.rtl .formError .formErrorArrow {
 		&.is--mb0{
 			margin-bottom: 0;
 		}
+		&.is--form-panel{
+			margin-bottom: 25px;
+			@media @media-point-screen {
+				margin-bottom: 2.3vw;
+			}
+		}
+		&.is--form-card{
+			margin-bottom: 25px;
+			@media @media-point-screen {
+				margin-bottom: 1.3vw;				
+			}
+		}
+		&.is--icon{
+			position: relative;
+			padding-top: 77px;
+			&::before{
+				content: '';
+				width: 56px;
+				height: 56px;
+				background-image: url("@{url-path-img}/default/icons.png");
+				background-position: -106px -205px;
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
+		//old
 		&.is--reviews{
 			@media @media-point-notsmart {				
 				margin-bottom: 0;
@@ -3699,12 +3771,6 @@ body.rtl .formError .formErrorArrow {
 		}
 		&.is--about-header{
 			margin-bottom: 0;
-		}
-		&.is--form-panel{
-			margin-bottom: 25px;
-			@media @media-point-screen {
-				margin-bottom: 2.6vw;
-			}
 		}
 		&.is--products-card{
 			padding-top: 10px;
@@ -3752,7 +3818,10 @@ body.rtl .formError .formErrorArrow {
 		position: relative;
 		@media @media-point-smart {
 			br {display: none;}
-		}		
+		}	
+		&.is--white{
+			color: @white;
+		}	
 		&.is--heading{
 			.heading2();
 			text-transform: uppercase;
@@ -3777,7 +3846,23 @@ body.rtl .formError .formErrorArrow {
 			@media @media-point-screen {
 				padding-right: 4vw;				
 			}
+		}	
+		&.is--form-panel{
+			.heading1();
+			font-family: @b-ff-2;
+			text-transform: uppercase;
 		}
+		&.is--form-card{
+			.heading3();
+			font-weight: 700;
+		}
+		&.is--center{
+			text-align: center;
+			@media @media-point-smart {text-align: left;}
+		}
+
+
+		//old
 		&.is--line-blue-light{
 			color: @blue-light;
 			@media @media-point-screen {
@@ -3789,14 +3874,6 @@ body.rtl .formError .formErrorArrow {
 				}
 			}
 		}
-		&.is--center{
-			text-align: center;
-			@media @media-point-smart {text-align: left;}
-		}	
-		&.is--form-panel{
-			.heading2();
-			font-weight: 500;
-		}
 		&.is--reviews-heading{
 			text-align: center;
 		}	
@@ -3805,7 +3882,6 @@ body.rtl .formError .formErrorArrow {
 			font-weight: 500;
 			color: @blue;
 		}
-		//old
 		&.is--heading-panel{
 			font-family: @page_header_ff;
 			.calcFontSize(90, 140, 320, 1680);
@@ -3857,9 +3933,18 @@ body.rtl .formError .formErrorArrow {
 		&.is--heading{
 			//font-weight: 700;
 		}
+		&.is--form-card{
+			.heading4();
+			margin-bottom: 0px;
+			padding-bottom: 3px;
+			.page-header__heading + &{
+				@media @media-point-screen {
+					padding-top: 3px;
+				}
+			}
+		}
 		&.is--form-panel{
 			.heading4();
-			letter-spacing: 1px;
 			margin-bottom: 0px;
 			padding-bottom: 3px;
 			.page-header__heading + &{

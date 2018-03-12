@@ -6,6 +6,25 @@
 		z-index: 2;
 		padding-top: 35px;
 		padding-bottom: 35px;
+		&.is--objacts{
+			border: 1px solid @blue-light;
+			background-color: fadeout(@blue-light, 70%);
+			padding: 20px 25px;
+			@media @media-point-screen {
+				padding: 2vw 2vw;
+			}
+		}
+		&.is--business{
+		    border-bottom: 3px solid @b-color-a;
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: cover;
+		    background-attachment: fixed;
+			@media @media-point-screen {
+				padding-top: 2vw;
+				padding-bottom: 4.3vw; 
+			}
+		}
 	}
 	&panel-inner{
 	}
@@ -19,9 +38,31 @@
 				max-width: 370px;
 			}
 		}
+		&.is--business{
+			border: 10px solid fadeout(@white, 90%);
+			border-radius: 12px;
+			max-width: 830px;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	&inner{
-
+		&.is--business{
+			background-color: fadeout(@white, 20%);
+			padding: 20px;
+			@media @media-point-screen {
+				padding: 2.9vw;
+			}			
+		}
+	}
+	&wrapper{
+		&.is--business{
+			@media @media-point-notsmart {
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 370px;
+			}		
+		}
 	}
 	&row{
 		margin-top: -20px;

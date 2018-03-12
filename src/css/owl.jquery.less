@@ -126,9 +126,6 @@
 		@media @media-point-screen {
 			opacity: 0;
 			transition: @trs-site;
-			.owl-carousel:hover &{
-				opacity: 1;
-			}
 		}
 		.owl-prev{			
 			left: 5px;		
@@ -142,7 +139,13 @@
 				right: 2.7vw;			
 			}				
 		}
+	}	
+	.owl-slider:hover &{
+		@media @media-point-screen {
+			opacity: 1;
+		}
 	}
+	.owl-partners &,
 	.owl-objacts &{
 		.owl-prev{			
 			left: 0;		
