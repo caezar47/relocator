@@ -25,99 +25,53 @@
 				<div class="{{navbar_prefix}}collapse-inner">	
 					<div class="row {{navbar_prefix}}collapse-row">
 						<div class="cols {{navbar_prefix}}collapse-cols cols  is--left">
-							<a class="{{navbar_prefix}}brand" href="{{page.index}}"><img src="{{url-path-img}}/svg/logotip.svg" alt=""></a> 
+							<ul class="{{navbar_prefix}}nav">
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html"  
+									navbar_prefix="navbar__" 
+									navbar_name="Новые объекты" 
+									navbar_link="objacts"
+									navbar_mod="  "  
+									navbar_scrollto="scrollto"  
+									navbar_diff="-65"  
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Каталог" 
+									navbar_link="catclog"
+									navbar_mod="  "  
+									navbar_scrollto="scrollto"  
+									navbar_diff="  "  
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="О компании" 
+									navbar_link="about"
+									navbar_mod="  "  
+									navbar_scrollto="scrollto"  
+									navbar_diff="  "  
+								]]
+								[[azbntple 
+									tpl="/src/block/site/default/navbar/item.html" 
+									navbar_prefix="navbar__" 
+									navbar_name="Кейсы и отзывы" 
+									navbar_link="reviews"
+									navbar_mod="  "  
+									navbar_scrollto="scrollto"  
+									navbar_diff="  "  
+								]]
+							</ul>
 						</div>
-						<div class="cols {{navbar_prefix}}collapse-cols cols  is--right">
-							<div class="{{navbar_prefix}}collapse-panel">
-								<div class="row {{navbar_prefix}}collapse-row  is--inner">
-									<div class="cols {{navbar_prefix}}collapse-cols cols  is--inner-left">	
-										<a href="{{page.search}}" class="{{navbar_prefix}}search">	
-											<div class="{{navbar_prefix}}search-icon">
-												[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-search" ]]
-											</div>
-											Поиск
-										</a>
-									</div>
-									<div class="cols {{navbar_prefix}}collapse-cols cols  is--inner-center">
-										<ul class="{{navbar_prefix}}nav">
-											[[azbntple 
-												tpl="/src/block/site/default/navbar/item.html" 
-												navbar_prefix="navbar__" 
-												navbar_name="Главная" 
-												navbar_link="{{page.index}}"
-												navbar_mod="is--index" 
-											]]
-											[[azbntple 
-												tpl="/src/block/site/default/navbar/item-drop-about.html" 
-												navbar_prefix="navbar__" 
-												navbar_name="О нас" 
-												navbar_link="{{page.about}}"
-												navbar_mod="  " 
-											]]         
-											[[azbntple 
-												tpl="/src/block/site/default/navbar/item.html" 
-												navbar_prefix="navbar__" 
-												navbar_name="Программы" 
-												navbar_link="{{page.programm}}"
-												navbar_mod="  " 
-											]]
-											[[azbntple 
-												tpl="/src/block/site/default/navbar/item.html" 
-												navbar_prefix="navbar__" 
-												navbar_name="Страны" 
-												navbar_link="{{page.country}}"
-												navbar_mod="  " 
-											]]	
-											[[azbntple 
-												tpl="/src/block/site/default/navbar/item.html" 
-												navbar_prefix="navbar__" 
-												navbar_name="Новости"
-												navbar_link="{{page.news}}"
-												navbar_mod="  " 
-											]]	
-											[[azbntple 
-												tpl="/src/block/site/default/navbar/item.html" 
-												navbar_prefix="navbar__" 
-												navbar_name="Отзывы"
-												navbar_link="{{page.reviews}}"
-												navbar_mod="  " 
-											]]	
-										</ul>
-									</div>
-									<div class="cols {{navbar_prefix}}collapse-cols cols  is--inner-right">										
-										<div class="row {{navbar_prefix}}info-row">	
-											<div class="cols {{navbar_prefix}}info-cols  is--town">
-												<label class="{{navbar_prefix}}town-bar">
-													<span class="{{navbar_prefix}}town-icon">
-														[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="icon-place" ]]
-													</span>
-													<select class="{{navbar_prefix}}town-select">
-														<option>Москва</option>
-														<option>Орёл</option>
-													</select>
-												</label>
-											</div>										
-											<div class="cols {{navbar_prefix}}info-cols  is--soc">									
-												[[azbntple 
-													tpl="/src/block/site/default/social/panel.html" 
-													block_prefix="social__" 
-													block_mod="  " 
-												]]	
-											</div>										
-											<div class="cols {{navbar_prefix}}info-cols  is--lang">
-												<div class="{{navbar_prefix}}lang-bar">
-													<select class="{{navbar_prefix}}lang-select">
-														<option>RU</option>
-														<option>EN</option>
-														<option>FR</option>
-														<option>GE</option>
-													</select>
-												</div>
-											</div>	
-										</div>
-									</div>
-								</div>
-							</div>
+						<div class="cols {{navbar_prefix}}collapse-cols cols  is--right">							
+							[[azbntple 
+								tpl="/src/block/site/default/button/button-modal.html"
+								button_prefix="btn__" 
+								button_mod="is--navbar" 
+								button_target="modal-message"
+								button_name="Скачать полный каталог" 
+							]]
 						</div>
 					</div>
 				</div>

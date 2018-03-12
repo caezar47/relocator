@@ -1,32 +1,136 @@
 <header class="{{block_prefix}}block">
-	<div class="{{block_prefix}}bg">
-		<picture>
-			<source media="(min-width: 768px)" 
-					srcset="{{url-path-img}}/temp/bg-header-1920x860.jpg">
-			<source media="(min-width: 451px)" 
-					srcset="{{url-path-img}}/temp/bg-header-767x450.jpg">
-			<img src="{{url-path-img}}/temp/bg-header-450x500.jpg" alt="">
-		</picture>
-	</div>
-	<div class="{{block_prefix}}panel">
-		<div class="container {{block_prefix}}container">
-			<div class="{{block_prefix}}inner">
+	<div class="container {{block_prefix}}container">
+		<div class="row {{block_prefix}}row  is--aic  is--wrap  is--gutter">
+			<div class="cols {{block_prefix}}cols  is--left">
+				<img class="{{block_prefix}}logotip" src="{{url-path-img}}/default/logotip.png" alt="">
+			</div>
+			<div class="cols {{block_prefix}}cols  is--center">
 				<h1 class="{{block_prefix}}heading">{{block_heading}}</h1>
-				<div class="{{block_prefix}}heading-small">{{block_heading_small}}</div>
-				[[azbntple 
-					tpl="/src/block/site/default/form/picking.html" 
-					form_prefix="form__"
-					form_id="fsp"
-					form_mod="is--inline  is--picking" 
-					form_heading="Подобрать прогрумму" 
-					form_color="is--header"
-					form_btn_mod="  "
-					form_btn_name="Подобрать"
-				]]
+			</div>
+			<div class="cols {{block_prefix}}cols  is--right">
+				<div class="{{block_prefix}}contacts-panel">
+					<div class="{{block_prefix}}elem">
+						<a class="{{block_prefix}}tel  czr__tel" href="tel:{{contacts.phone_tel}}">{{contacts.phone}}</a>
+					</div>
+					<div class="{{block_prefix}}elem">
+						[[azbntple 
+							tpl="/src/block/site/default/button/button-modal.html"
+							button_prefix="btn__" 
+							button_mod="is--header" 
+							button_target="modal-call"
+							button_name="Заказать звонок" 
+						]]
+					</div>
+					<div class="{{block_prefix}}elem">
+						<div class="{{block_prefix}}select  czr__select">
+							<div class="{{block_prefix}}selected  czr__selected">г. Москва</div>
+							<div class="{{block_prefix}}options  czr__options">
+								<div class="{{block_prefix}}option  czr__option  is--selected" data-phone="{{contacts.phone}}" data-address="Цветной бул., д.30">г. Москва</div>
+								<div class="{{block_prefix}}option  czr__option" data-phone="{{contacts.phone}}" data-address="ул. Ломоносова, д. 6">г. Орёл</div>
+								<div class="{{block_prefix}}option  czr__option" data-phone="{{contacts.phone}}" data-address="ул. Суворова, д. 121">г. Калуга</div>
+								<div class="{{block_prefix}}option  czr__option" data-phone="{{contacts.phone}}" data-address="ул. Демонстрации, 2Г">г. Тула</div>
+								<div class="{{block_prefix}}option  czr__option" data-phone="{{contacts.phone}}" data-address="ул. Ленина, д. 60">г. Курск</div>
+								<div class="{{block_prefix}}option  czr__option" data-phone="{{contacts.phone}}" data-address="ул. Институтская, д. 15">г. Брянск</div>
+								<div class="{{block_prefix}}option  czr__option" data-phone="{{contacts.phone}}" data-address="пр. Победы, д. 29">г. Липецк</div>
+							</div>
+						</div>
+						
+						<div class="{{block_prefix}}address  czr__address">Цветной бул., д.30</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<a href=".scrollto-ready" class="{{block_prefix}}scrollto scrollto" data-scrollto-diff="0">
-		[[azbntple tpl="/src/block/site/default/svg-sprite/.html" icon-name="next-panel" ]]
-	</a>
 </header>
+<div class="{{block_prefix}}slider owl-slider">
+	<div class="{{block_prefix}}slider-item" style="background-image: url({{url-path-img}}/default/slide1.jpg)">		
+		<div class="container {{block_prefix}}container">
+			<div class="{{block_prefix}}slider-desc">
+				<div class="{{block_prefix}}slider-desc-elem">
+						Полное юридическое сопровождение сделок
+				</div>
+				<div class="{{block_prefix}}slider-desc-elem">
+						Консультирование по всем аспектам бизнеса		
+				</div>				
+				<div class="{{block_prefix}}slider-desc-btn">					
+					[[azbntple 
+						tpl="/src/block/site/default/button/button-modal.html"
+						button_prefix="btn__" 
+						button_mod="is--slider" 
+						button_target="modal-slider"
+						button_name="Купить готовый бизнес!" 
+					]]
+				</div>				
+			</div>	
+		</div>	
+	</div>
+	<div class="{{block_prefix}}slider-item" style="background-image: url({{url-path-img}}/default/slide2.jpg)">		
+		<div class="container {{block_prefix}}container">
+			<div class="{{block_prefix}}slider-desc">
+				<div class="{{block_prefix}}slider-desc-elem">
+						Большая база потенциальных покупателей.
+				</div>
+				<div class="{{block_prefix}}slider-desc-elem">
+						Все сферы бизнеса!
+				</div>
+				<div class="{{block_prefix}}slider-desc-elem">
+						Продадим дороже рынка.
+				</div>				
+				<div class="{{block_prefix}}slider-desc-btn">					
+					[[azbntple 
+						tpl="/src/block/site/default/button/button-modal.html"
+						button_prefix="btn__" 
+						button_mod="is--slider" 
+						button_target="modal-slider"
+						button_name="Предложите свой бизнес покупателю!" 
+					]]
+				</div>				
+			</div>	
+		</div>	
+	</div>
+	<div class="{{block_prefix}}slider-item" style="background-image: url({{url-path-img}}/default/slide3.jpg)">		
+		<div class="container {{block_prefix}}container">
+			<div class="{{block_prefix}}slider-desc">
+				<div class="{{block_prefix}}slider-desc-elem">
+						Полное юридическое сопровождение сделок
+				</div>
+				<div class="{{block_prefix}}slider-desc-elem">
+						Консультирование по всем аспектам бизнеса		
+				</div>				
+				<div class="{{block_prefix}}slider-desc-btn">					
+					[[azbntple 
+						tpl="/src/block/site/default/button/button-modal.html"
+						button_prefix="btn__" 
+						button_mod="is--slider" 
+						button_target="modal-slider"
+						button_name="Купить готовый бизнес!" 
+					]]
+				</div>				
+			</div>	
+		</div>	
+	</div>
+	<div class="{{block_prefix}}slider-item" style="background-image: url({{url-path-img}}/default/slide4.jpg)">		
+		<div class="container {{block_prefix}}container">
+			<div class="{{block_prefix}}slider-desc">
+				<div class="{{block_prefix}}slider-desc-elem">
+						Большая база потенциальных покупателей.
+				</div>
+				<div class="{{block_prefix}}slider-desc-elem">
+						Все сферы бизнеса!
+				</div>
+				<div class="{{block_prefix}}slider-desc-elem">
+						Продадим дороже рынка.
+				</div>				
+				<div class="{{block_prefix}}slider-desc-btn">					
+					[[azbntple 
+						tpl="/src/block/site/default/button/button-modal.html"
+						button_prefix="btn__" 
+						button_mod="is--slider" 
+						button_target="modal-slider"
+						button_name="Предложите свой бизнес покупателю!" 
+					]]
+				</div>				
+			</div>	
+		</div>	
+	</div>
+</div>

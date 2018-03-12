@@ -1,11 +1,11 @@
 .navbar-site{ 
+	position: fixed; 
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0; 	
 	@media @media-point-device-lg{
-		color: @navbar-color-device;
-		position: fixed; 
-		width: 100%;
-		z-index: 100;
-		top: 0;
-		left: 0; 		
+		color: @navbar-color-device;	
 		//background: @navbar-bg-device;
 		//padding-top: 10px;
 		//padding-bottom: 10px; 	
@@ -29,28 +29,7 @@
 	}
 	@media @media-point-screen-lg {
 		color: @navbar-color;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		width: 100%;
-		z-index: 100; 
-		&.opacity{
-			opacity: 0;
-			transform: translateY(-100%);
-			transition: @trs-site;	
-
-		}
-		&.fixed{
-			position: fixed;
-			width: 100%;	
-		}
-		&.scroll-navbar{
-			opacity: 1;
-			transform: translateY(0%);
-			transition: @trs-site;
-		}
 	}
-	//box-shadow: 4px 7px 38px 0px fadeout(@black, 85%);
 	@media print{display: none;}
 }
 .navbar__{
@@ -58,14 +37,10 @@
 		padding-top: 10px;
 		padding-bottom: 10px; 
 		background: @navbar-bg-device;	
-
 		@media @media-point-screen-lg {			
 			background-color: @navbar-bg-screen;
-			padding-top: 13px;
-			padding-bottom: 18px;
-			.navbar-site.opacity &{
-				background: @navbar-bg-device;
-			}
+			padding-top: 0px;
+			padding-bottom: 0px;
 		}
 	}
 	&container{
@@ -75,21 +50,6 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-	/*&cols{
-		&.is--header{
-			width: 100%;
-			@media @media-point-screen-lg {display: none;}
-		}
-		&.is--collapse{
-			width: 0;
-			padding: 0;
-			@media @media-point-screen-lg {
-				width: 100%;
-				padding-left: 15px;
-				padding-right: 15px;
-			}
-		}
-	}*/
 	//header
 	&header{
 		width: 100%;
@@ -165,24 +125,6 @@
 		   	height: auto!important;
 		}	
 	}
-	&collapse-panel{
-		@media @media-point-screen-lg {
-			border-bottom: 1px solid fadeout(@blue-light, 50%);
-			//padding: 20px 0;
-		}
-	}
-	&collapse-inner{
-		@media @media-point-device-lg{
-			height: 100%;
-			overflow: auto;
-			padding: 20px 25px;
-			position: relative;
-		}
-		@media @media-point-md2 {
-			padding: 20px 20px;
-		}
-		@media @media-point-screen-lg{position: static;}
-	}
 	&collapse-row{
 		align-items: center;
 		@media @media-point-device-lg {
@@ -192,19 +134,13 @@
 		@media @media-point-screen-lg {
 			justify-content: space-between; 
 		}
-		&.is--jcfe{
-			justify-content: flex-end;
-		}
-		&.is--inner{
-			justify-content: space-between;
-		}
 	}
 	&collapse-cols{
 		@media @media-point-device-lg {
 			padding-top: 20px;
 			.makeCols(12, 12);
 		}
-		&.is--left{
+		/*&.is--left{
 			@media @media-point-device-lg {display: none;}
 			@media @media-point-screen-lg {
 				.makeCols(1.4, 12);
@@ -230,24 +166,11 @@
 			@media @media-point-xxl {
 				.makeCols(3.65, 12);
 			}
-		}
-	}
-	&info-row{
-		justify-content: space-between;
-		@media @media-point-device-lg {
-			flex-wrap: wrap;
-			margin-top: -20px;
-		}
-	}
-	&info-cols{
-		@media @media-point-device-lg {
-			.makeCols(12, 12);
-			padding-top: 20px;
-		}
+		}*/
 	}
 	//nav
 	@gutter: 15px;
-	@gutter_screen: 0.95vw;
+	@gutter_screen: 0;
 	&nav{
 		margin: 0;
 		padding: 0;
@@ -264,10 +187,10 @@
 		}
 		@media @media-point-screen-lg {
 			justify-content: center;
-			font-size: @navbar-fs;
-			line-height: @navbar-lh;
-			.calcFontSize(16, 18, 1200, 1680);
-			.calcLineHeight(16, 18, 1200, 1680);
+			font-size: @navbar-fs - 2;
+			line-height: @navbar-lh - 2;
+			margin-left: -(@gutter_screen);
+			margin-right: -(@gutter_screen);
 		}
 	} 
 	&nav-item{
@@ -294,18 +217,6 @@
     	position: relative;
     	text-transform: uppercase;
 		transition: @trs-site;
-		&::before{
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			height: 3px;
-			background-color: @navbar-color-link;
-			bottom: -10px;
-			opacity: 0;
-			transition: @trs-site;
-		}
 		@media @media-point-device-lg{
 			color: @navbar-color-device;
 		    display: inline-block;
@@ -316,7 +227,7 @@
 			z-index: 1;
 			text-align: center;
 			color: @navbar-color;
-			padding: 20px 0px;
+			padding: 24px 15px 23px;
 		}
 		span{
 			position: relative;
@@ -326,26 +237,14 @@
 		&:hover{
 			color: @navbar-color-hover;
 			@media @media-point-screen-lg{
-				//background-color: @navbar-active-bg;
-			}	
-			&::before{
-				bottom: -2px;
-				opacity: 1;
-				box-shadow: 0 0 15px 3px fadeout(@blue-light, 70%);
+				background-color: @navbar-active-bg;
 			}	
 		}		
 		.navbar__nav-item.open &,
 		.navbar__nav-item.is--active &{
-			font-weight: 700;
 			cursor: default;
 			color: @navbar-active-color;
-			//background-color: @navbar-active-bg;			
-			background: none;
-			&::before{
-				bottom: -2px;
-				opacity: 1;
-				box-shadow: 0 0 15px 3px fadeout(@blue-light, 70%);
-			}			
+			background-color: @navbar-active-bg;			
 		}	
 	}
 	&tel-block{

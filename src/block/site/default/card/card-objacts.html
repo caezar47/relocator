@@ -1,0 +1,21 @@
+<div class="{{block_prefix}}card  {{block_mod}}">	
+	<a href="{{block_link}}" class="{{block_prefix}}preview  {{block_mod}}">
+		<img src="{{block_preview}}" alt="{{block_heading}}">
+	</a>	
+	<div class="{{block_prefix}}heading  {{block_mod}}">{{block_heading}}</div>
+	<div class="{{block_prefix}}text-group  {{block_mod}}">
+		<div class="{{block_prefix}}text  {{block_mod}}">Стоимость: <span>{{block_cost}} руб.</span></div>	
+		<div class="{{block_prefix}}text  {{block_mod}}">Прибыль: <span>{{block_profit}} руб.</span></div>	
+		<div class="{{block_prefix}}text  {{block_mod}}">Город: <span>{{block_city}}</span></div>	
+		<div class="{{block_prefix}}text  {{block_mod}}">Окупаемость: <span>{{block_payback}} мес.</span></div>	
+	</div>
+	<div class="{{block_prefix}}btn  {{block_mod}}">			
+		[[azbntple 
+			tpl="/src/block/site/default/button/link.html"
+			button_prefix="btn__" 
+			button_mod="is--invers"
+			button_link="{{block_link}}"
+			button_name="Подробнее"
+		]]
+	</div>
+</div>

@@ -17,24 +17,7 @@
 					block_required="required"
 					block_required_custom="onlyLetterSp"
 					block_label="Имя"
-					block_placeholder="Ваше имя"
-				]]
-			</div>
-			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--name">
-				[[azbntple 
-					tpl="/src/block/site/default/form/elem-input-custom.html"
-					form_id="{{form_id}}"
-					block_id="email"
-					block_prefix="{{form_prefix}}"
-					block_mod="{{form_mod}}"
-					block_mod_elem="is--email"
-					block_color="{{form_color}}"
-					block_type="email"
-					block_attr="  "
-					block_required="required"
-					block_required_custom="email"
-					block_label="E-mail"
-					block_placeholder="Ваш E-mail"
+					block_placeholder="введите имя"
 				]]
 			</div>
 			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--tel">
@@ -54,51 +37,25 @@
 					block_placeholder="Ваш телефон"
 				]]
 			</div>
-			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--textarea">
+			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--name">
 				[[azbntple 
-					tpl="/src/block/site/default/form/elem-textarea.html"
+					tpl="/src/block/site/default/form/elem-input-custom.html"
 					form_id="{{form_id}}"
-					block_id="comments"
+					block_id="email"
 					block_prefix="{{form_prefix}}"
 					block_mod="{{form_mod}}"
-					block_mod_elem="is--textarea"
+					block_mod_elem="is--email"
 					block_color="{{form_color}}"
+					block_type="email"
 					block_attr="  "
 					block_required="required"
-					block_required_custom="  "
-					block_label="Kомментарий"
-					block_placeholder="Ваш комментарий"
+					block_required_custom="email"
+					block_label="E-mail"
+					block_placeholder="Ваш E-mail"
 				]]
 			</div>
 			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--agreement">
-				[[azbntple 
-					tpl="/src/block/site/default/form/elem-switch.html"
-					form_id="{{form_id}}"
-					block_id="agreement"
-					block_prefix="{{form_prefix}}"
-					block_mod="{{form_mod}}"
-					block_mod_elem="  "
-					block_color="{{form_color}}"
-					block_attr="checked"
-					block_required="required"
-					block_label="Согласие на обработку персональных данных"
-					block_text="Я согласен на обработку <a href='{{page.agreement}}'>персональных данных</a>"
-				]]	
-			</div>
-			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--subs  text-align--right">
-				[[azbntple 
-					tpl="/src/block/site/default/form/elem-switch.html"
-					form_id="{{form_id}}"
-					block_id="subscribe"
-					block_prefix="{{form_prefix}}"
-					block_mod="{{form_mod}}"
-					block_mod_elem="  "
-					block_color="{{form_color}}"
-					block_attr="  "
-					block_required="  "
-					block_label="Согласие на обработку персональных данных"
-					block_text="Подписаться на новости"
-				]]	
+				Гарантируем 100% конфиденциальность Ваших данных
 			</div>
 			<div class="cols {{form_prefix}}cols  {{form_mod}}  is--btn">
 				[[azbntple 

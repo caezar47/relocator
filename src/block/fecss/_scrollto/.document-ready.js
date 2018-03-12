@@ -13,6 +13,6 @@ $(document.body).on('click.fecss.scrollto', '.scrollto', {}, function(event){
 	$('html, body').animate({
 		scrollTop: (el.offset().top + diff)
 	}, speed);
-	//$(".navbar-nav li").removeClass("active");
-	//btn.parent().addClass("active");
+	$(".navbar-nav li").removeClass("is--active");
+	btn.parent().addClass("is--active");
 });

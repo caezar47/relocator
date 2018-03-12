@@ -1,13 +1,13 @@
 'use strict';
 $(function() {
-	$('.owl-reviews').owlCarousel({
+	$('.owl-slider').owlCarousel({
 		//navText: ['<svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev"></use></svg>', '<svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next"></use></svg> '],
-		navText: ['<svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbn7theme/img/svg/sprite.svg#owl-prev"></use></svg>', '<svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/wp-content/themes/azbn7theme/img/svg/sprite.svg#owl-next"></use></svg> '],
+		navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-next"></use></svg> '],
 		nav: true,
 		dots: true,
 		smartSpeed: 500,
 		items:1,
-		margin: 30,
+		margin: 0,
 		loop: true,
 		mouseDrag: false,
 		responsive : {
@@ -16,6 +16,24 @@ $(function() {
 			},
 			768 : {
 				nav: true,
+			}
+		}
+	});
+	$('.owl-objacts').owlCarousel({
+		//navText: ['<svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev"></use></svg>', '<svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next"></use></svg> '],
+		navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-next"></use></svg> '],
+		nav: true,
+		dots: false,
+		smartSpeed: 500,
+		items: 3,
+		margin: 15,
+		//loop: true,
+		mouseDrag: false,
+		responsive : {
+			0 : {
+				items: 1,
+			},
+			768 : {
 			}
 		}
 	});
