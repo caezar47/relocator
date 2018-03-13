@@ -1,9 +1,15 @@
 .kontakty-panel__{
 	&block{	
 		position: relative;
-		@media @media-point-notsmart {
-			padding-top: 45px;
+	}
+	&container{		
+		padding-top: 40px;
+		@media @media-point-screen {
+			padding-top: 3vw;
 		}
+	}
+	&wrap{
+		position: relative;
 	}
 	&inner{
 		margin-bottom: 35px;
@@ -11,13 +17,10 @@
 			margin: 0;
 			position: absolute;
 			z-index: 5;
-			box-shadow: 7px 12px 29px 0px fadeout(@black, 80%);
 			background: @white;
 			top: 0;
-			max-width: 655px;
-			min-width: 360px;
-			width: 34vw;
-			padding: 4.8vw 7vw;			
+			max-width: 320px;
+			padding: 2vw 2.5vw;			
 		}
 		@media @media-point-tablet {
 			padding: 30px 45px;
@@ -35,53 +38,6 @@
 			height: 500px;
 		}
 	}
-	&tabs-nav{
-		list-style: none;
-		margin: 0 -15px 20px;
-		padding: 0;
-		display: flex;
-		@media @media-point-screen {
-			margin-left: -20px;
-			margin-right: -20px;
-			margin-bottom: 2.5vw;
-		}
-	}
-	&tabs-item{
-		padding: 0 15px;
-		@media @media-point-screen {
-			padding: 0 20px;
-		}
-	}
-	&tabs-link{
-		display: block;
-		padding-left: 15px;
-		font-size: @b-fs + 6;
-		line-height: @b-lh + 4;
-		position: relative;
-		&, &:focus, &:hover{
-			color: @blue;			
-		}
-		.kontakty-panel__tabs-item.active &{
-			font-weight: 500;
-		}
-		&::before{
-			content: '';
-			position: absolute;
-			top: 50%;
-			left: 0;
-			transform: translateY(-50%);
-			border-left: 5px solid fadeout(@blue, 0%);
-			border-top: 5px solid fadeout(@blue, 100%);
-			border-bottom: 5px solid fadeout(@blue, 100%);
-			.kontakty-panel__tabs-item.active &{
-				transform: translateY(-50%) rotate(90deg);
-			}
-		}
-	}
-	&tabs-pane{
-		display: none;
-		&.active{display: block;}
-	}
 	&item-group{
 
 	}
@@ -96,13 +52,10 @@
 .kontakty-item__{
 	&item{
 		position: relative;
-		//
+		padding-top: 8px;
+		padding-bottom: 8px;
 		&, &:hover, &:focus{
 			color: @b-color-h;
-		}
-		span{
-			font-weight: 700;
-			color: @green-dark;
 		}
 		&.is--icon{
 			padding-left: 40px;
@@ -115,10 +68,14 @@
 		a[href^="tel:"]&,
 		&, &:hover, &:focus{
 			color: @b-color-h;
+			&.is--white{
+				color: @white;
+			}
 		}
 		&.is--tel{
 			display: inline-block;
 		}
+		svg{display: block;}
 	}
 	&icon{ 
 		position: absolute;
@@ -128,10 +85,14 @@
 		transition: @trs-site;
 		width: 30px;
 		height: 30px;
-		border: 2px solid @b-color;
+		border: 2px solid @b-color-a;
 		border-radius: 50%;
-		color: @b-color;
-		padding: 6px;
+		color: @b-color-a;
+		padding: 4px;
 		svg{display: block;}
+		&.is--white{
+			border-color: @white;
+			color: @white;
+		}
 	}
 }

@@ -1,0 +1,93 @@
+<form action="#" class="{{form_prefix}}block  {{form_mod}}"  >
+	<input type="hidden" name="key" value="londonisthecapitalofgreatbritain">
+	<input type="hidden" name="f[Форма: {{form_heading}}]">
+	<div class="{{form_prefix}}inner  {{form_mod}}"  >
+		<div class="{{form_prefix}}wrapper  {{form_mod}}"  >
+			<div class="row {{form_prefix}}row  is--wrap">
+				<div class="cols {{form_prefix}}cols  {{form_mod}}  is--left">
+					<div class="row {{form_prefix}}row  is--wrap">
+						<div class="cols {{form_prefix}}cols  {{form_mod}}  is--business">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-select.html"
+								form_id="{{form_id}}"
+								block_id="business"
+								block_prefix="{{form_prefix}}"
+								block_mod="{{form_mod}}"
+								block_mod_elem="is--business"
+								block_color="{{form_color}}"
+								block_type="business"
+								block_attr="  "
+								block_required="  "
+								block_label="Категории бизнеса"
+								block_placeholder="  "
+								block_option="<option selected disabled>Выберите категорию бизнеса</option><option>Арендный бизнес</option><option>VIP-объекты</option><option>Автобизнес</option><option>Общественное питание</option><option>Объекты торговли</option><option>Отели и хостелы</option><option>Индустрия красоты</option><option>Производства</option><option>Медицина</option><option>Интернет-магазины</option><option>Образование</option><option>Сфера услуг</option><option>Развлечения</option><option>Недвижимость</option><option>Аренда бизнеса</option><option>ППА</option>"
+							]]
+						</div>
+						<div class="cols {{form_prefix}}cols  {{form_mod}}  is--city">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-select.html"
+								form_id="{{form_id}}"
+								block_id="city"
+								block_prefix="{{form_prefix}}"
+								block_mod="{{form_mod}}"
+								block_mod_elem="is--city"
+								block_color="{{form_color}}"
+								block_type="city"
+								block_attr="  "
+								block_required="  "
+								block_label="Город"
+								block_placeholder="  "
+								block_option="<option selected disabled>Выберите город</option><option>Москва</option><option>Орёл</option><option>Калуга</option><option>Тула</option><option>Курск</option><option>Брянск</option><option>Липецк</option>"
+							]]
+						</div>
+						<div class="cols {{form_prefix}}cols  {{form_mod}}  is--cost">
+							[[azbntple 
+								tpl="/src/block/site/default/form/elem-input.html"
+								form_id="{{form_id}}"
+								block_id="cost"
+								block_prefix="{{form_prefix}}"
+								block_mod="{{form_mod}}"
+								block_mod_elem="is--cost"
+								block_color="{{form_color}}"
+								block_type="number"
+								block_attr="min='0' step='50000'"
+								block_required="  "
+								block_label="Стоимость, от"
+								block_placeholder="Стоимость, от"
+							]]
+						</div>
+					</div>
+				</div>
+				<div class="cols {{form_prefix}}cols  {{form_mod}}  is--right">	
+					[[azbntple 
+						tpl="/src/block/site/default/form/elem-textarea.html"
+						form_id="{{form_id}}"
+						block_id="text"
+						block_prefix="{{form_prefix}}"
+						block_mod="{{form_mod}}"
+						block_mod_elem="is--text"
+						block_color="{{form_color}}"
+						block_attr="  "
+						block_required="  "
+						block_label="Заявка в свободной форме"
+						block_placeholder="Или опишите заявку в свободной форме:"
+					]]
+				</div>
+				<div class="cols {{form_prefix}}cols  {{form_mod}}  is--agreement">
+					<div class="{{form_prefix}}item  {{form_mod}}  is--agreement  is--center">
+						Гарантируем 100% конфиденциальность Ваших данных
+					</div>
+				</div>
+				<div class="cols {{form_prefix}}cols  {{form_mod}}  is--btn">
+					[[azbntple 
+						tpl="/src/block/site/default/button/button.html"
+						button_prefix="btn__" 
+						button_mod="{{form_btn_mod}}"
+						button_type="submit"
+						button_name="{{form_btn_name}}"
+					]]				
+				</div>
+			</div> 
+		</div> 
+	</div> 
+</form> 

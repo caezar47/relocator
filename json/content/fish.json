@@ -5,14 +5,11 @@
 		"domain_link":"http://relocator.ru/",
 		"agreement_page":"agreement",
 		"copyright":"",
-		"email":"info@beinternational.ru",
+		"email":"mail@relocator.ru",
 		"phone":"+7 (495) 748-92-71",  
 		"phone_tel":"+74957489271",   
-		"clock":"с&nbsp;9 до&nbsp;1:30",  
-		"address":"г.&nbsp;Москва, ул.&nbsp;Долгоруковская, д.7, БЦ&nbsp;«Садовая плаза»",
-		"address2":"г.&nbsp;Орёл, ул.&nbsp;Ломоносова, д.6, БЦ&nbsp;«Модус»",
-		"inn":"",
-		"ogrninn":""
+		"clock":"с&nbsp;9:00 до&nbsp;18:00",
+		"address":"г.&nbsp;Москва, Цветной бул., 30"
 	},
 	"soc":{
 		"vk":"https://vk.com/",
@@ -22,29 +19,7 @@
 		"inst":"https://www.instagram.com/"
 	},
 	"page":{
-		"index":"/",
-		"about":"/about.html",
-		"team":"/team.html",
-		"partners":"/partners.html",
-		"certificates":"/certificates.html",
-		"country":"/country.html",
-		"country_category":"/country-category.html",
-		"country_card":"/country-card.html",
-		"country_card":"/country-card.html",
-		"school":"/school.html",
-		"school_card":"/school-card.html",
-		"programm":"/programm.html",
-		"programm_category":"/programm-category.html",
-		"programm_card":"/programm-card.html",
-		"news":"/news.html",
-		"article":"/article.html",
-		"news_card":"/news-item.html",
-		"reviews":"/reviews.html",
-		"reviews_card":"/reviews-card.html",
-		"contacts":"/contacts.html",
-		"search":"/search.html",
-		"404":"/404.html",
-		"agreement":"/agreement.html"
+		"index":"/"
 	},	                           
 	"url-path-css":"/css",
 	"url-path-img":"/img",
@@ -52,5 +27,3 @@
 	"url-path-plugins":"/plugins",
 	"url-path-favicon":"/favicon"
 }
-
-

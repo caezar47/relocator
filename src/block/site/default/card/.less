@@ -19,7 +19,19 @@
 			@media @media-point-screen {
 				padding: 2vw 2.5vw;
 			}
+		}	
+		&.is--objacts-cat{
+			position: relative;
+			display: block;
 		}		
+		&.is--reviews{
+			position: relative;
+			border: 1px solid fadeout(@white, 60%);
+			background-color: fadeout(@white, 75%);
+			color: @white;
+			padding: 20px;
+			height: 100%;
+		}	
 	}
 	&inner{
 		transition: @trs-site;
@@ -30,7 +42,9 @@
 		
 	}
 	&cols{
-		
+		&.is--reviews{
+			.makeCols(6, 12);
+		}		
 	}
 	&preview{
 		&.is--number{
@@ -58,6 +72,17 @@
 		&.is--objacts{
 			display: block;
 			margin-bottom: 20px;
+		}
+		&.is--reviews{
+			&.is--heading{
+				width: 105px;
+				height: 105px;
+				border-radius: 50%;
+				position: absolute;
+				right: 20px;
+				top: 0;
+				transform: translateY(-15%);
+			}
 		}		
 	}
 	&heading{
@@ -77,20 +102,47 @@
 			font-family: @b-ff-3;
 			font-size: @b-fs - 2;
 			min-height: 35px;
+		}
+		&.is--objacts-cat{
+			background-color: @b-color-a;
+			color: @white;
+			position: absolute;
+			bottom: 15px;
+			left: 0;
+			font-weight: 700;
+			font-weight: @b-ff-3;
+			text-transform: uppercase;
+			font-size: @b-fs + 2;
+			padding: 10px 20px;
+			.card-item__card:hover &{
+				background-color: @red-dark;
+			}
+		}
+		&.is--reviews{
+			padding-top: 5px;
+			&.is--company{
+				text-align: right;
+			}
 		}		
 	}
 	&text{
-		font-family: @b-ff-2;
-		margin-bottom: 5px;
-		font-size: @b-fs + 2;
-		line-height: @b-lh + 4;
-		color: @b-color;
-		span{
-			display: inline-block;
-			margin-left: auto;
-			font-weight: 700;
-			font-family: @b-ff;
-			color: @black;
+		&.is--objacts{
+			font-family: @b-ff-2;
+			margin-bottom: 5px;
+			font-size: @b-fs + 2;
+			line-height: @b-lh + 4;
+			color: @b-color;
+			span{
+				display: inline-block;
+				margin-left: auto;
+				font-weight: 700;
+				font-family: @b-ff;
+				color: @black;
+			}
+		}
+		&.is--reviews{
+			padding-top: 15px;
+			font-style: italic;
 		}
 	}
 	&heading-small{

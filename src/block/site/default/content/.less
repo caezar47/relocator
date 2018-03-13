@@ -12,6 +12,20 @@
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
+		&.is--clients{
+			background: linear-gradient(
+				to right, 
+				@white3 0%,
+				@white3 50%,
+				@white 50%,
+				@white 100%
+			); 
+		}
+		&.is--reviews{
+			@media @media-point-screen {
+				background-attachment: fixed;
+			}
+		}
 	}
 	&panel-block{
 		
@@ -118,14 +132,131 @@
 	}		  
 	&cols{	
 		&.is--number{}
+		&.is--objacts-cat{
+			@media @media-point-screen {
+				.makeCols(4, 12);
+			}
+		}
+		&.is--about{
+			&.is--left{
+				.makeCols(12, 12);
+				@media @media-point-notsmart {
+					.makeCols(9, 12);
+				}
+			}
+			&.is--right{
+				.makeCols(12, 12);
+				@media @media-point-notsmart {
+					.makeCols(3, 12);
+				}
+
+			}
+		}
+		&.is--clients{
+			.makeCols(12, 12);
+			&.is--left{
+				@media @media-point-screen {
+					.makeCols(4, 12);
+				}
+			}
+			&.is--center{
+				@media @media-point-screen {
+					.makeCols(4, 12);
+				}
+
+			}
+			&.is--right{
+				@media @media-point-screen {
+					.makeCols(4, 12);
+				}
+			}
+
+		}
+		&.is--reviews{
+			@media @media-point-screen {
+				.makeCols(6, 12);
+			}
+		}
+	}
+	&inner{
+		&.is--reviews{
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 975px;
+		}
+	}
+	&heading{
+		&.is--clients{
+			display: inline-block;
+			text-transform: uppercase;
+			@media @media-point-screen {				
+				&.is--before{
+					position: relative;
+					&::after{
+						content: '';
+	    				position: absolute;
+						top: 50%;
+						left: -15px;
+						transform: translate(-100%,-50%);
+	    				background-image: url("@{url-path-img}/default/icons.png");
+	    				background-position: -59px -319px;
+	    				background-repeat: no-repeat;
+	    				width: 34px;
+						height: 11px;
+					}
+				}
+				&.is--after{
+					position: relative;
+					padding-right: 50px;
+					&::after{
+						content: '';
+	    				position: absolute;
+						top: 50%;
+						right: 0;
+						transform: translateY(-50%);
+	    				background-image: url("@{url-path-img}/default/icons.png");
+	    				background-position: -59px -319px;
+	    				background-repeat: no-repeat;
+	    				width: 34px;
+						height: 11px;
+					}
+				}
+			}
+		}
 	}
 	&text{
 		&.is--center{
 			text-align: center;
 		}
-		
+		&.is--clients{
+			@media @media-point-screen {
+				padding-top: 30px;
+			}
+		}		
 	}
-	&preview{}
+	&preview{
+		&.is--about{
+			@media @media-point-notsmart {
+				margin-left: auto;
+			}
+		}
+		&.is--clients{
+			border-radius: 50%;
+			border:7px solid fadeout(#678eb7, 85%);
+			margin: 0 auto 15px;
+		}
+	}
+	&name{
+		&.is--clients{
+			text-align: center;
+		}
+	}
+	&company{
+		&.is--clients{
+			text-align: center;
+			color: @black;
+		}
+	}
 	&btn{}
 	&owl-slider{
 

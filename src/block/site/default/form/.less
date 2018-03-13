@@ -19,10 +19,25 @@
 		    background-repeat: no-repeat;
 		    background-position: center;
 		    background-size: cover;
-		    background-attachment: fixed;
 			@media @media-point-screen {
+		    	background-attachment: fixed;
 				padding-top: 2vw;
 				padding-bottom: 4.3vw; 
+			}
+		}
+		&.is--contract{
+			@media @media-point-screen {
+				padding-top: 4vw;
+				padding-bottom: 4vw;
+			}
+		}
+		&.is--objacts-select,
+		&.is--quest{
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: cover;
+			@media @media-point-screen {
+		    	background-attachment: fixed;
 			}
 		}
 	}
@@ -38,21 +53,25 @@
 				max-width: 370px;
 			}
 		}
-		&.is--business{
+		&.is--white-panel{
 			border: 10px solid fadeout(@white, 90%);
 			border-radius: 12px;
 			max-width: 830px;
 			margin-left: auto;
-			margin-right: auto;
+			margin-right: auto;			
+		}
+		&.is--business{
 		}
 	}
 	&inner{
-		&.is--business{
+		&.is--white-panel{
 			background-color: fadeout(@white, 20%);
 			padding: 20px;
 			@media @media-point-screen {
 				padding: 2.9vw;
 			}			
+		}
+		&.is--business{
 		}
 	}
 	&wrapper{
@@ -79,7 +98,7 @@
 		padding-top: 20px;
 		@media @media-point-screen {
 			padding-top: 10px;
-		}	
+		}
 		&.is--btn{
 			text-align: center;	
 			padding-top: 20px;
@@ -140,12 +159,34 @@
 				}				
 			}	
 		}
+		&.is--objacts-select{
+			&.is--left,
+			&.is--right{
+				.makeCols(12, 12);
+				@media @media-point-screen {
+					.makeCols(6, 12);
+				}
+			}
+		}
 	}
 	&item{
 		position: relative;
 		&.is--switch{
 			&.is--inline{
 				//text-align: center;
+			}
+		}
+		&.is--center{
+			@media @media-point-notsmart {
+				text-align: center;
+			}
+		}
+		&.is--objacts-select{
+			&.is--text{
+				height: 100%;
+			}
+			&.is--agreement{
+				color: @black;
 			}
 		}
 	}
@@ -166,7 +207,7 @@
 		line-height: @form_control_t_lh;
 		transition: @trs-site;
 		@media @media-point-screen {
-			height: @form_control_height - 15;
+			height: @form_control_height - 10;
 		}
 
 		&::-moz-placeholder{
@@ -203,7 +244,7 @@
 			border-radius: @form_control_border_radius - 20;	
 		}
 		&.is--select{
-			border-radius: @form_control_border_radius - 20;  
+			//border-radius: @form_control_border_radius - 20;  
 			height: @form_control_height - 10;
 			padding: 5px;
 			&.is--xs{
@@ -253,6 +294,14 @@
 					//background-color: fadeout(@form_control_w_bg_color, 0%);
 				}
 			}			
+		}
+		&.is--objacts-select{
+			&.is--text{
+				height: 150px;
+				@media @media-point-screen {
+					height: 100%;					
+				}
+			}
 		}
 	}
 	&switch{

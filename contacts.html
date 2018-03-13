@@ -54,16 +54,16 @@
 						<div class="cols navbar__collapse-cols cols  is--left">
 							<ul class="navbar__nav">
 								<li class="navbar__nav-item    ">
-	<a href="#objacts" class="navbar__nav-link  scrollto"  data-scrollto-diff="-65"><span>Новые объекты</span></a>  
+	<a href="#objacts" class="navbar__nav-link  scrollto"  data-scrollto-diff="-62"><span>Новые объекты</span></a>  
 </li>
 								<li class="navbar__nav-item    ">
-	<a href="#catclog" class="navbar__nav-link  scrollto"  data-scrollto-diff="  "><span>Каталог</span></a>  
+	<a href="#objacts-cat" class="navbar__nav-link  scrollto"  data-scrollto-diff="-60"><span>Каталог</span></a>  
 </li>
 								<li class="navbar__nav-item    ">
-	<a href="#about" class="navbar__nav-link  scrollto"  data-scrollto-diff="  "><span>О компании</span></a>  
+	<a href="#about" class="navbar__nav-link  scrollto"  data-scrollto-diff="-62"><span>О компании</span></a>  
 </li>
 								<li class="navbar__nav-item    ">
-	<a href="#reviews" class="navbar__nav-link  scrollto"  data-scrollto-diff="  "><span>Кейсы и отзывы</span></a>  
+	<a href="#client" class="navbar__nav-link  scrollto"  data-scrollto-diff="-62"><span>Кейсы и отзывы</span></a>  
 </li>
 							</ul>
 						</div>
@@ -99,19 +99,19 @@
 		<div class="tabs__dropdown-inner">
 			<ul class="tabs__nav  is--about">
 				<li class="tabs__item  is--about">
-					<a class="tabs__link  is--about" href="/about.html">О компании</a>
+					<a class="tabs__link  is--about" href="{{page.about}}">О компании</a>
 				</li>
 				<li class="tabs__item  is--about">
-					<a class="tabs__link  is--about" href="/team.html">Наша команда</a>
+					<a class="tabs__link  is--about" href="{{page.team}}">Наша команда</a>
 				</li>
 				<li class="tabs__item  is--about">
-					<a class="tabs__link  is--about" href="/partners.html">Партнеры</a>
+					<a class="tabs__link  is--about" href="{{page.partners}}">Партнеры</a>
 				</li>
 				<li class="tabs__item  is--about">
-					<a class="tabs__link  is--about" href="/certificates.html">Сертификаты</a>
+					<a class="tabs__link  is--about" href="{{page.certificates}}">Сертификаты</a>
 				</li>
 				<li class="tabs__item  is--about">
-					<a class="tabs__link  is--about" href="/contacts.html">Контакты</a>
+					<a class="tabs__link  is--about" href="{{page.contacts}}">Контакты</a>
 				</li>
 			</ul>
 		</div>
@@ -122,162 +122,101 @@
 
 		</div>
 	</div>
-	<div class="kontakty-panel__block">
-	<div class="kontakty-panel__container container  is--nopadding">
-		<div class="kontakty-panel__inner">
-			<ul class="kontakty-panel__tabs-nav">
-				<li class="kontakty-panel__tabs-item active">
-					<a href="#contacts-msk" class="kontakty-panel__tabs-link  azbn__office__map__set-center-btn" data-toggle="tab" data-coord="55.7736, 37.602">Москва</a>
-				</li>
-				<li class="kontakty-panel__tabs-item">
-					<a href="#contacts-orel" class="kontakty-panel__tabs-link  azbn__office__map__set-center-btn" data-toggle="tab" data-coord="52.9842, 36.0601">Орёл</a>
-				</li>
-			</ul>
-			<div class="kontakty-panel__tabs-content">
-				<div class="kontakty-panel__tabs-pane active" id="contacts-msk">
-					<div class="kontakty-panel__item-group">
-						<div class="kontakty-panel__item">
-							<div class="kontakty-item__item  is--icon  is--tel">
+	<div class="kontakty-panel__block">	
+	<div class="kontakty-panel__container container">
+		<div class="page-header__block  is--page-heading-sm">
+	<{{block_heading_level}}  class="page-header__heading  is--page-heading-sm">Контакты</{{block_heading_level}}>		
+</div>	
+		<div class="kontakty-panel__wrap">
+			<div class="kontakty-panel__inner">
+				<div class="kontakty-panel__item-group">
+					<div class="kontakty-panel__item">
+						<div class="kontakty-item__item  is--icon  is--tel">
 	<div class="kontakty-item__icon  is--icon  is--tel">
 		<svg class="icon-svg icon-contacts-tel" role="img">
 	<use xlink:href="/img/svg/sprite.svg#contacts-tel"></use>
 </svg>
 	</div>
 	<a href="tel:+74957489271"    class="kontakty-item__link  is--icon  is--tel">
-		+7 (495) 748-92-71,
-	</a>
-	<a href="tel:+74957489271"    class="kontakty-item__link  is--icon  is--tel">
 		+7 (495) 748-92-71
 	</a>
 </div>			
-						</div>
-						<div class="kontakty-panel__item">
-							<div class="kontakty-item__item  is--icon">
-	<a href="mailto:info@beinternational.ru"    class="kontakty-item__link  is--icon">
+					</div>
+					<div class="kontakty-panel__item">
+						<div class="kontakty-item__item  is--icon">
+	<a href="mailto:mail@relocator.ru"    class="kontakty-item__link  is--icon">
 		<div class="kontakty-item__icon  is--icon">
 			<svg class="icon-svg icon-contacts-email" role="img">
 	<use xlink:href="/img/svg/sprite.svg#contacts-email"></use>
 </svg>
 		</div>
-		info@beinternational.ru
+		mail@relocator.ru
 	</a>
 </div>			
-						</div>		
-						<div class="kontakty-panel__item">
-							<div class="kontakty-item__item is--icon">
+					</div>	
+					<div class="kontakty-panel__item">
+						<div class="kontakty-item__item is--icon">
+	<div class="kontakty-item__icon  is--icon">
+		<svg class="icon-svg icon-contacts-clock" role="img">
+	<use xlink:href="/img/svg/sprite.svg#contacts-clock"></use>
+</svg>
+	</div>
+	Будни: с&nbsp;9:00 до&nbsp;18:00
+</div>			
+					</div>	
+					<div class="kontakty-panel__item">
+						<div class="kontakty-item__item is--icon">
 	<div class="kontakty-item__icon  is--icon">
 		<svg class="icon-svg icon-contacts-address" role="img">
 	<use xlink:href="/img/svg/sprite.svg#contacts-address"></use>
 </svg>
 	</div>
-	г.&nbsp;Москва, ул.&nbsp;Долгоруковская, д.7, БЦ&nbsp;«Садовая плаза»
+	г.&nbsp;Москва, Цветной бул., 30
 </div>			
-						</div>
 					</div>	
-				</div>	
-				<div class="kontakty-panel__tabs-pane" id="contacts-orel">
-					<div class="kontakty-panel__item-group">
-						<div class="kontakty-panel__item">
-							<div class="kontakty-item__item  is--icon">
-	<a href="mailto:info@beinternational.ru"    class="kontakty-item__link  is--icon">
-		<div class="kontakty-item__icon  is--icon">
-			<svg class="icon-svg icon-contacts-email" role="img">
-	<use xlink:href="/img/svg/sprite.svg#contacts-email"></use>
-</svg>
+				</div>
+			</div>
 		</div>
-		info@beinternational.ru
-	</a>
-</div>			
-						</div>	
-						<div class="kontakty-panel__item">
-							<div class="kontakty-item__item  is--icon">
-	<div class="kontakty-item__icon  is--icon">
+	</div>
+	<div class="kontakty-panel__map" id="map-google" data-map='{"center" : [55.7725, 37.6230],"zoom" : 17,"placemarks" : [{"coord" : [55.772290, 37.622513], "title" : "Офис в Москве"}]}' ></div>
+</div> 
+</main>		
+		<footer class="footer__block">		
+	<div class="container footer__container">
+		<div class="row footer__row">
+			<div class="cols footer__cols  is--left">
+				<a href="#header" class="scrollto footer__logotip"  data-scrollto-diff="-62">
+					<img src="/img/default/logotip-white.png" alt="">
+				</a>
+				<div class="footer__copyright">
+					&copy; ООО Релокатор. Все права защищены.
+				</div>
+			</div>
+			<div class="cols footer__cols  is--right">						
+				<div class="footer__contacts-item">
+					<div class="kontakty-item__item  is--icon  is--tel  is--white">
+	<div class="kontakty-item__icon  is--icon  is--tel  is--white">
 		<svg class="icon-svg icon-contacts-tel" role="img">
 	<use xlink:href="/img/svg/sprite.svg#contacts-tel"></use>
 </svg>
 	</div>
-	<a href="tel:+74957489271"    class="kontakty-item__link  is--icon">
-		+7 (495) 748-92-71,
-	</a>
-	<a href="tel:+74957489271"    class="kontakty-item__link  is--icon">
+	<a href="tel:+74957489271"    class="kontakty-item__link  is--icon  is--tel  is--white">
 		+7 (495) 748-92-71
 	</a>
 </div>			
-						</div>
-						<div class="kontakty-panel__item">
-							<div class="kontakty-item__item is--icon">
-	<div class="kontakty-item__icon  is--icon">
-		<svg class="icon-svg icon-contacts-address" role="img">
-	<use xlink:href="/img/svg/sprite.svg#contacts-address"></use>
-</svg>
-	</div>
-	г.&nbsp;Орёл, ул.&nbsp;Ломоносова, д.6, БЦ&nbsp;«Модус»
-</div>			
-						</div>	
-					</div>	
-				</div>	 
-			</div>	
-		</div>
-	</div>
-	<div class="kontakty-panel__map" id="map-google" data-map='{"center" : [55.7736, 37.602],"zoom" : 17,"placemarks" : [{"coord" : [55.773847, 37.603495], "title" : "Офис в Москве"},{"coord" : [52.984461, 36.061639], "title" : "Офис в Орле"}]}' ></div>
-</div> 
-</main>		
-		<footer class="footer__block">	
-	<div class="footer__inner">	
-		<div class="container footer__container">
-			<div class="row footer__row">
-				<div class="cols footer__cols  is--left">
-					<a href="/" class="footer__copyright">
-						<svg class="icon-svg icon-logotip" role="img">
-	<use xlink:href="/img/svg/sprite.svg#logotip"></use>
-</svg>
-					</a>
 				</div>
-				<div class="cols footer__cols  is--center">
-					<div class="social-contacts__block">
-	<div class="social-contacts__row row  is--footer">
-		<div class="social-contacts__cols cols  is--address  is--footer">
-			<div class="social-contacts__item   is--footer">
-				<span class="social-contacts__item-icon  is--footer"><svg class="icon-svg icon-contacts-address" role="img">
-	<use xlink:href="/img/svg/sprite.svg#contacts-address"></use>
-</svg></span>
-				<span class="social-contacts__item-name  is--footer">г.&nbsp;Москва, ул.&nbsp;Долгоруковская, д.7, БЦ&nbsp;«Садовая плаза»</span>
-			</div>
-		</div>
-		<div class="social-contacts__cols cols  is--footer">
-			<a href="tel:+74957489271" class="social-contacts__item   is--footer">
-				<span class="social-contacts__item-icon  is--footer"><svg class="icon-svg icon-contacts-tel" role="img">
-	<use xlink:href="/img/svg/sprite.svg#contacts-tel"></use>
-</svg></span>
-				<span class="social-contacts__item-name  is--footer">+7 (495) 748-92-71</span>
-			</a>
-		</div>
-		<div class="social-contacts__cols cols  is--footer">
-			<a href="mailto:info@beinternational.ru" class="social-contacts__item   is--footer">
-				<span class="social-contacts__item-icon  is--footer"><svg class="icon-svg icon-contacts-email" role="img">
+				<div class="footer__contacts-item">
+					<div class="kontakty-item__item  is--icon  is--white">
+	<a href="mailto:mail@relocator.ru"    class="kontakty-item__link  is--icon  is--white">
+		<div class="kontakty-item__icon  is--icon  is--white">
+			<svg class="icon-svg icon-contacts-email" role="img">
 	<use xlink:href="/img/svg/sprite.svg#contacts-email"></use>
-</svg></span>
-				<span class="social-contacts__item-name  is--footer">info@beinternational.ru</span>
-			</a>
-		</div>
-	</div>
-</div>	
-				</div>
-
-				<div class="cols footer__cols  is--dorohovdesign">
-					<div class="row footer__dorohovdesign-row"> 
-						<div class="cols footer__dorohovdesign-cols  is--text">
-							<div class="footer__dorohovdesign-text">Создание сайта</div>
-						</div>
-						<div class="cols footer__dorohovdesign-cols  is--logotip">
-							<a href="http://dorohovdesign.ru/" target="_blank" class="footer__dorohovdesign-logotip">
-								<svg class="icon-svg icon-dorohovdesign" role="img">
-	<use xlink:href="/img/svg/sprite.svg#dorohovdesign"></use>
 </svg>
-							</a>
-						</div>
-					</div>				 
-				</div>
+		</div>
+		mail@relocator.ru
+	</a>
+</div>			
+				</div>		 
 			</div>
 		</div>
 	</div>

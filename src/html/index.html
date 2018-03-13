@@ -19,6 +19,7 @@
 			block_prefix="header-block__"
 			block_heading="Продажа готового бизнеса в России"
 			block_heading_small="Обучение за рубежом"
+			block_id="header"
 		]]	
 		[[azbntple 
 			tpl="/src/block/site/default/content/panel-number.html"
@@ -45,17 +46,7 @@
 			block_heading_level="h2"
 			block_heading="Новые объекты"
 			block_heading_small="  "
-		]]	 
-		[[azbntple 
-			tpl="/src/block/site/default/content/panel-objacts-cat.html"
-			block_prefix="content-block__"
-			block_mod="is--objacts"
-			block_id="objacts-cat"
-			block_heading_mod="is--heading  is--line"
-			block_heading_level="h2"
-			block_heading="Объекты по категориям"
-			block_heading_small="  "
-		]]	 
+		]]	  
 		[[azbntple 
 			tpl="/src/block/site/default/content/panel-partners.html"
 			block_prefix="content-block__"
@@ -75,59 +66,114 @@
 			form_heading="Мы продадим Ваш бизнес ДОРОГО!"
 			form_heading_small="Если Вы хотите продать свой бизнес, оставьте заявку"
 			form_id="fssb"
-			form_mod_form="is--business"
+			form_mod_form="is--business  is--white-panel"
 			form_color="  "
 			form_btn_mod="is--arrows"
 			form_btn_name="Продать бизнес"
 		]] 
-
-
-
-		[[azbntple  
-			tpl="/src/block/site/page/programm/index.html"
-			content_prefix="content-block__"      
-			content_mod="is--programm-index"      
-			block_heading_mod="is--page-heading  is--line"
-			block_heading="Категории программ"     
-		]]
-		[[azbntple  
-			tpl="/src/block/site/default/content/panel-about-index.html"
-			content_prefix="content-block__"       
-			content_mod="is--about-header  is--index"      
-			block_heading_mod="is--page-heading  is--line  is--line-blue-light"
-			block_heading="О нас"    
-			block_bg="{{url-path-img}}/temp/bg-about-header.jpg" 
-		]]
-		[[azbntple  
-			tpl="/src/block/site/page/index/page.html"
-			content_prefix="content-block__"      
-			content_mod="is--index-page"      
-			block_heading_mod="is--page-heading  is--line"
-			block_heading="  "     
-		]]
-		[[azbntple  
-			tpl="/src/block/site/default/content/panel-reviews-index.html"
-			content_prefix="content-block__"
-			content_mod="is--reviews-index"
-			block_heading_mod="is--page-heading  is--line"
-			block_heading="Отзывы наших клиентов"
+		[[azbntple 
+			tpl="/src/block/site/default/content/panel-objacts-cat.html"
+			block_prefix="content-block__"
+			block_mod="is--objacts-cat"
+			block_id="objacts-cat"
+			block_heading_mod="is--heading  is--line"
+			block_heading_level="h2"
+			block_heading="Каталог объектов готового бизнеса:"
+			block_heading_small="  "
 		]]
 		[[azbntple 
-			tpl="/src/block/site/default/form/panel-questions.html"
+			tpl="/src/block/site/default/content/panel-objacts-cat-slider.html"
+			block_prefix="content-block__"
+			block_mod="is--objacts"
+			block_id="objacts-cat-slider"
+			block_heading_mod="is--heading  is--line"
+			block_heading_level="h2"
+			block_heading="Объекты по категориям"
+			block_heading_small="  "
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/content/panel-about.html"
+			block_prefix="content-block__"
+			block_mod="is--about"
+			block_id="about"
+			block_heading_mod="is--heading  is--line"
+			block_heading_level="h2"
+			block_heading="О компании"
+			block_heading_small="  "
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/form/panel-objacts-select.html"
 			form_prefix="form-panel__"
-			form_mod="is--questions" 
-			form_bg="{{url-path-img}}/temp/bg-form-questions.jpg"
-			form_bg_after="{{url-path-img}}/temp/bg-form-questions-plans.png"
-			
-			header_mod="is--form-panel  is--center  color--blue-light"
-
-			form_id="fpr"
-			form_heading="Остались вопросы?" 
-			form_heading_small="Получите консультацию, отправив данные менеджеру" 
-			form_mod_form="is--inline"
-			form_color="is--white"
-			form_btn_mod="is--xl"
-			form_btn_name="Оптравить"
+			form_mod="is--objacts-select"
+			form_bg="{{url-path-img}}/bg/bg-form-item1.jpg"
+			form_heading_mod="is--form-panel  is--center  is--icon  is--white"
+			form_heading="Заказать бесплатно подборку лучших объектов из нашей базы по вашим параметрам"
+			form_heading_small="Отправьте заявку и мы бесплатно подберем для вас прибыльный бизнес и поможем в его покупке"
+			form_id="fsos"
+			form_mod_form="is--objacts-select  is--white-panel"
+			form_color="  "
+			form_btn_mod="is--arrows"
+			form_btn_name="Подобрать объект"
+		]] 		
+		[[azbntple 
+			tpl="/src/block/site/default/content/panel-client.html"
+			block_prefix="content-block__"
+			block_mod="is--clients"
+			block_id="client"
+			block_heading_mod="is--heading  is--line  is--sm"
+			block_heading_level="h2"
+			block_heading="Кейсы клиентов"
+			block_heading_small="  "
+		]]			
+		[[azbntple 
+			tpl="/src/block/site/default/content/panel-reviews.html"
+			block_prefix="content-block__"
+			block_mod="is--reviews"
+			block_id="reviews"
+			block_heading_mod="is--heading  is--center  is--white"
+			block_heading_level="h2"
+			block_heading="Отзывы наших клиентов"
+			block_heading_small="  "
+			block_bg="{{url-path-img}}/bg/bg-form-item3.jpg"
+		]]	
+		[[azbntple 
+			tpl="/src/block/site/default/form/panel-contract.html"
+			form_prefix="form-panel__"
+			form_mod="is--contract"
+			form_bg="  "
+			form_heading_mod="is--form-panel  is--center"
+			form_heading="Получи подробные условия сотрудничества и типовой договор"
+			form_heading_small="Заполните форму и наш специалист свяжется с Вами и вышлет материалы на Вашу почту"
+			form_id="fsctr"
+			form_mod_form="is--contract  is--center"
+			form_color="  "
+			form_btn_mod="is--arrows"
+			form_btn_name="Получить материалы"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/form/panel-quest.html"
+			form_prefix="form-panel__"
+			form_mod="is--quest"
+			form_bg="{{url-path-img}}/bg/bg-form-item4.jpg"
+			form_heading_mod="is--form-panel  is--icon  is--center  is--white  "
+			form_heading="Остались вопросы? <br>задайте их нашему специалисту"
+			form_heading_small="  "
+			form_id="fsctr"
+			form_mod_form="is--quest  is--white-panel"
+			form_color="  "
+			form_btn_mod="is--arrows"
+			form_btn_name="Задать вопрос специалисту"
+			form_btn_target="modals-quest"
+		]]
+		[[azbntple 
+			tpl="/src/block/site/default/contacts/panel.html"
+			block_prefix="kontakty-panel__"
+			block_mod="is--about"
+			block_id="about"
+			block_heading_mod="is--heading  is--line"
+			block_heading_level="h2"
+			block_heading="Контакты"
+			block_heading_small="  "
 		]]
 		[[azbntple 
 			tpl="/src/block/site/default/footer/.html"
@@ -135,5 +181,6 @@
 		]]		
 		[[azbntple tpl="/src/block/site/default/script/script.html" ]]  
 		[[azbntple tpl="/src/block/site/default/script/owl.html" ]]
+		[[azbntple tpl="/src/block/site/default/script/googleMap.html" ]]
 	</body>
 </html>
