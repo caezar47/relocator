@@ -33,8 +33,12 @@ $(function() {
 			0 : {
 				items: 1,
 			},
-			768 : {
-			}
+			567 : {
+				items: 2,
+			},
+			1025:{
+				items: 3,
+			},
 		}
 	});
 	$('.owl-partners').owlCarousel({
@@ -51,7 +55,12 @@ $(function() {
 		autoplaySpeed: 1000,
 		responsive : {
 			0 : {
-				items: 1,
+				items: 2,
+				nav: false,
+			},
+			567 : {
+				items: 3,
+				nav: false,
 			},
 			768 : {
 			}

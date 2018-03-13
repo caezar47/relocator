@@ -117,6 +117,10 @@
 			.heading2();
 			text-transform: uppercase;
 		}	
+		&.is--modals{
+			.heading2();
+			text-transform: uppercase;
+		}
 		&.is--page-heading{
 			.heading1();
 		}		
@@ -149,55 +153,7 @@
 		}
 		&.is--center{
 			text-align: center;
-			@media @media-point-smart {text-align: left;}
-		}
-
-
-		//old
-		&.is--line-blue-light{
-			color: @blue-light;
-			@media @media-point-screen {
-				&::before{
-					background-color: @blue-light;
-				}
-				&::after{
-					border: 2px solid @blue-light;
-				}
-			}
-		}
-		&.is--reviews-heading{
-			text-align: center;
-		}	
-		&.is--country-panel,
-		&.is--programm-panel{
-			font-weight: 500;
-			color: @blue;
-		}
-		&.is--heading-panel{
-			font-family: @page_header_ff;
-			.calcFontSize(90, 140, 320, 1680);
-			.calcLineHeight(64, 100, 320, 1680);
-			font-weight: 400;
-		}
-		&.is--heading{
-		}
-		&.is--products-card{
-			font-family: @b-ff-2;
-			.calcFontSize(60, 94, 320, 1680);
-			.calcLineHeight(30, 60, 320, 1680);	
-			font-weight: 400;		
-		}
-		&.is--panel{
-			font-family: @b-ff-2;
-			.calcFontSize(60, 114, 320, 1680);
-			.calcLineHeight(30, 80, 320, 1680);	
-			font-weight: 400;		
-		}
-		&.is--modals{
-			font-weight: 400;
-			.calcFontSize(24, 34, 320, 1680);
-			.calcLineHeight(24, 34, 320, 1680);	
-			color: @b-color-a;
+			//@media @media-point-smart {text-align: left;}
 		}
 	}
 	&heading-small{
@@ -216,13 +172,18 @@
 		}
 		&.is--center{
 			text-align: center;
-			@media @media-point-smart {text-align: left;}
+			//@media @media-point-smart {text-align: left;}
 		}
 		@media @media-point-smart {
 			br {display: none;}
 		}
 		&.is--heading{
 			//font-weight: 700;
+			font-size: @b-fs;
+			line-height: @b-lh;
+			.page-header__heading + &{
+				padding-top: 10px;
+			}
 		}
 		&.is--form-card{
 			.heading4();

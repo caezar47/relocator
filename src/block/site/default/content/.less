@@ -128,24 +128,54 @@
 		}
 	}
 	&row{
-		&.is--number{}
+		&.is--number{
+			@media @media-point-notsmart {
+				justify-content: space-between;
+			}
+			@media @media-point-sm {
+				justify-content: center;
+			}
+		}
 	}		  
 	&cols{	
-		&.is--number{}
-		&.is--objacts-cat{
-			@media @media-point-screen {
+		&.is--number{
+			@media @media-point-xxs {
+				.makeCols(6, 12);
+			}
+			@media @media-point-xs {
 				.makeCols(4, 12);
+			}
+			@media @media-point-sm {
+				.makeCols(4, 12);
+			}
+		}
+		&.is--objacts-cat{
+			.makeCols(12, 12);
+			@media @media-point-xs {
+				.makeCols(6, 12);
+			}
+			@media @media-point-notsmart {
+				.makeCols(4, 12);
+			}
+			@media @media-point-sm {
+				.makeCols(6, 12);
 			}
 		}
 		&.is--about{
 			&.is--left{
 				.makeCols(12, 12);
+				@media @media-point-xs {
+					.makeCols(9, 12);
+				}
 				@media @media-point-notsmart {
 					.makeCols(9, 12);
 				}
 			}
 			&.is--right{
 				.makeCols(12, 12);
+				@media @media-point-xs {					
+					.makeCols(3, 12);
+				}
 				@media @media-point-notsmart {
 					.makeCols(3, 12);
 				}
@@ -173,8 +203,11 @@
 
 		}
 		&.is--reviews{
-			@media @media-point-screen {
+			@media @media-point-notsmart {
 				.makeCols(6, 12);
+			}
+			@media @media-point-sm {
+				.makeCols(12, 12);
 			}
 		}
 	}

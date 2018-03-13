@@ -148,16 +148,22 @@
 	.owl-partners &,
 	.owl-objacts &{
 		.owl-prev{			
-			left: 0;		
+			left: 0;
 			@media @media-point-screen {
+				transform: translateX(-50%);		
+			}		
+			@media @media-point-xxl {
 				transform: translateX(-120%);
 			}
 		}
 		.owl-next{
 			right: 0;
 			@media @media-point-screen {
+				transform: translateX(50%);		
+			}	
+			@media @media-point-xxl {
 				transform: translateX(120%);		
-			}				
+			}			
 		}
 	}
 }

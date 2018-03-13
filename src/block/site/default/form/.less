@@ -82,6 +82,13 @@
 				max-width: 370px;
 			}		
 		}
+		&.is--objacts-select{
+			@media @media-point-tablet {
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 370px;
+			}		
+		}
 	}
 	&row{
 		margin-top: -20px;
@@ -104,60 +111,9 @@
 			padding-top: 20px;
 		}
 		&.is--agreement{
-			padding-top: 23px;			
-		}
-		&.is--inline{
-			@media @media-point-screen {
-				.makeCols(4, 12);
-			}
-			&.is--textarea{
-				.makeCols(12, 12);				
-			}
-			&.is--subs,
-			&.is--agreement{
-				padding-top: 10px;
-				@media @media-point-screen {.makeCols(6, 12);}
-			}
-			&.is--agreement{
-				&.is--questions{
-					@media @media-point-screen {
-						padding-top: 35px;					
-					}
-				}
-			}
-			&.is--country{
-				@media @media-point-screen-lg {
-					padding-top: 38px;
-				}
-			}
-			&.is--btn{
-				text-align: center;	
-				padding-top: 20px;
-				.makeCols(12, 12);
-				&.is--questions{
-					@media @media-point-screen {
-						padding-top: 40px;
-					}
-				}
-				&.is--picking{
-					@media @media-point-screen {
-						.makeCols(4, 12);
-					}
-				}
-			}
-			&.is--subs{
-				@media @media-point-screen {
-					text-align: right;
-				}
-			}
-			&.is--picking{
-				@media @media-point-md2 {
-					.makeCols(12, 12);
-					&.is--btn{
-						.makeCols(12, 12);
-					}
-				}				
-			}	
+			padding-top: 23px;
+			color: @black;	
+			text-align: center;			
 		}
 		&.is--objacts-select{
 			&.is--left,

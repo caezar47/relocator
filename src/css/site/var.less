@@ -132,8 +132,8 @@
 @navbar-btn:					@white;
 @navbar-btn-hover:				@white;
 
-@navbar-color-device:			@b-color;
-@navbar-color-device-hover:		@b-color;
+@navbar-color-device:			@white;
+@navbar-color-device-hover:		@white;
 
 @navbar-collapse-bg:			@white3;
 @navbar-collapse-color-h:		@b-color-a;
@@ -340,7 +340,7 @@
 }
 .heading2(){
 	.calcFontSize(18, 20, 320, 1680);
-	.calcLineHeight(32, 30, 320, 1680);
+	.calcLineHeight(24, 26, 320, 1680);
 }
 .heading3(){
 	.calcFontSize(16, 18, 320, 1680);
@@ -399,7 +399,7 @@
 .mix-indicators-panel(){
 	list-style: none;
 	margin: 0 -8px;
-	padding: 10px 0;
+	padding: 10px 15px;
 	display: flex;
 	flex-wrap: wrap;
 	//justify-content: center;
@@ -410,6 +410,7 @@
 	width: 100%;
 	z-index: 4;
 	@media @media-point-screen {
+		padding: 10px 0;
 		bottom: 0px;
 		transform: translate(-50%,100%);
 		left: 50%;

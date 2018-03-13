@@ -1,7 +1,7 @@
 var url = window.location.pathname;
 //var url = window.location.href;
 $('.navbar__nav a[href="'+url+'"]').parent().addClass('is--active'); 
-$('.tabs__nav a[href="'+url+'"]').parent().addClass('is--active'); 
+//$('.tabs__nav a[href="'+url+'"]').parent().addClass('is--active'); 
 /*$('.navbar-category__nav .navbar-category__link[href="'+url+'"]').addClass('is--active'); 
 $('.navbar__nav').on('click', '.navbar__nav-dropdown a[data-toggle="tab-dropdown"]', function(e) {
     e.preventDefault();
@@ -24,3 +24,18 @@ $('.navbar__nav').on('click', '.navbar__nav-dropdown a[data-toggle="tab-dropdown
 $('[data-azbn-toggle="dropdown"]').on('click', function(e) {
 	$(".azbn-dropdown").toggleClass('open');
 });
+
+$(function(){
+	
+	$(document.body).on('click', '.navbar__collapse.is--open .navbar__nav-link.scrollto', {}, function(event){
+		
+		if(screenJS.isXS() || screenJS.isSM()) {
+			event.preventDefault();
+			
+			$('.navbar-site .navbar__hamburger-btn').trigger('click');
+			
+		}
+		
+	});
+	
+})
