@@ -154,11 +154,27 @@
 			@media @media-point-xs {
 				.makeCols(6, 12);
 			}
-			@media @media-point-notsmart {
+			@media @media-point-tablet {
 				.makeCols(4, 12);
 			}
-			@media @media-point-sm {
-				.makeCols(6, 12);
+			@media @media-point-screen {
+				.makeCols(3, 12);
+			}
+		}
+		&.is--objacts-card{
+			&.is--left,
+			&.is--right{
+				.makeCols(12, 12);
+			}
+			&.is--left{
+				@media @media-point-screen {
+					.makeCols(5, 12);
+				}
+			}
+			&.is--right{
+				@media @media-point-screen {
+					.makeCols(7, 12);
+				}
 			}
 		}
 		&.is--about{

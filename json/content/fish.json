@@ -19,7 +19,8 @@
 		"inst":"https://www.instagram.com/"
 	},
 	"page":{
-		"index":"/relocator/"
+		"index":"/relocator/",
+		"objacts_card":"/relocator/objects-card.html"
 	},	                           
 	"url-path-css":"/relocator/css",
 	"url-path-img":"/relocator/img",

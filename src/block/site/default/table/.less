@@ -33,9 +33,10 @@
 }
 .table{ 
 	border: 0; 
-	font-size: @b-fs - 4;
-	line-height: @b-lh - 6;
+	font-size: @b-fs;
+	line-height: @b-lh;
 	margin-bottom: 0;
+	color: @black;
 	@media print{
 		* {color: @black}
 	}
@@ -85,8 +86,8 @@
 		tr{			
 			th, td{
 				padding: 15px 10px;
-				border-bottom: 1px solid @blue;
-				text-align: center;
+				border-bottom: 1px solid fadeout(@b-color-a, 80%);
+				//text-align: center;
 				&:first-child{
 					//padding-left: 0;
 					//text-align: left;
@@ -101,13 +102,13 @@
 			}
 			&:first-child{
 				th, td{
-					//border-top: 2px solid @green;
+					border-top: 4px solid @b-color-a;
 					@media print{border-top-color: @black}
 				}
 			}
 			&:last-child{
 				th, td{
-					border-bottom: 4px solid @blue-light;
+					border-bottom: 4px solid @b-color-a;
 					@media print{border-bottom-color: @black}
 				}
 			}
