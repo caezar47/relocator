@@ -19,11 +19,11 @@
 		"inst":"https://www.instagram.com/"
 	},
 	"page":{
-		"index":"/"
+		"index":"/relocator/"
 	},	                           
-	"url-path-css":"/css",
-	"url-path-img":"/img",
-	"url-path-js":"/js",
-	"url-path-plugins":"/plugins",
-	"url-path-favicon":"/favicon"
+	"url-path-css":"/relocator/css",
+	"url-path-img":"/relocator/img",
+	"url-path-js":"/relocator/js",
+	"url-path-plugins":"/relocator/plugins",
+	"url-path-favicon":"/relocator/favicon"
 }
