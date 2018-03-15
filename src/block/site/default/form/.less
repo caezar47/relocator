@@ -14,6 +14,10 @@
 				padding: 2vw 2vw;
 			}
 		}
+		&.is--action{
+			padding-top: 0;
+			padding-bottom: 0;
+		}
 		&.is--business{
 		    border-bottom: 3px solid @b-color-a;
 		    background-repeat: no-repeat;
@@ -42,6 +46,11 @@
 		}
 	}
 	&panel-inner{
+		&.is--action{
+			@media @media-point-notsmart {
+				max-width: 500px;
+			}
+		}
 	}
 }
 .form__{
@@ -124,6 +133,14 @@
 				}
 			}
 		}
+		&.is--action{
+			&.is--radio{
+				.makeCols(12, 12);
+				@media @media-point-screen {
+					.makeCols(6, 12);
+				}				
+			}
+		}
 	}
 	&item{
 		position: relative;
@@ -197,7 +214,10 @@
 			border-width: @form_control_border_width;
 			border-style: solid;
 			border-color: @form_control_border_color;
-			border-radius: @form_control_border_radius - 20;	
+			border-radius: @form_control_border_radius - 20;
+			&.is--reviews{
+				//height: 150px;
+			}	
 		}
 		&.is--select{
 			//border-radius: @form_control_border_radius - 20;  
@@ -259,6 +279,9 @@
 				}
 			}
 		}
+	}
+	&radio{
+
 	}
 	&switch{
 		padding-top: 10px;    

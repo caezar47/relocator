@@ -52,7 +52,7 @@
 						button_prefix="btn__" 
 						button_mod="  "
 						button_target="modal-view"
-						button_name="Записаться на просмотр"
+						button_name="Назначить просмотр бизнеса"
 					]]	
 				</div>
 				<div class="{{block_prefix}}cols cols {{block_mod}}">		
@@ -61,7 +61,7 @@
 						button_prefix="btn__" 
 						button_mod="  "
 						button_target="modal-presentation"
-						button_name="Скачать презентацию"
+						button_name="Оставить сообщение собственнику"
 					]]	
 				</div>
 			</div>
@@ -95,15 +95,36 @@
 					<li>Права владения: <strong>Аренда</strong></li>
 					<li>Стоимость аренды: <strong>80&nbsp;000 ₽</strong></li>
 				</ul>
-
-
-
-
-
-
-
-
+				<h2>Основные средства бизнеса (материальные)</h2>
+				<ul> 
+					<li>Оборудование и имущество: <strong>Терминалы 21 шт.</strong></li>
+				</ul>
 			</div>
+		</div>
+		<div class="{{block_prefix}}elem  {{block_mod}}">			
+			[[azbntple 
+				tpl="/src/block/site/default/form/panel-action.html"
+				form_prefix="form-panel__"
+				form_mod="is--action"
+				form_bg="  "
+				form_heading_mod="is--form-panel  is--center"
+				form_heading="Выберите действие"
+				form_heading_small="  "
+				form_id="fsctr"
+				form_mod_form="is--action"
+				form_color="  "
+				form_btn_mod="is--arrows"
+				form_btn_name="Отправить"
+			]]
+		</div>
+		<div class="{{block_prefix}}elem  {{block_mod}}">
+			[[azbntple 
+				tpl="/src/block/site/default/button/link.html"
+				button_prefix="btn__" 
+				button_mod="is--sm"
+				button_link="{{page.index}}"
+				button_name="Назад"
+			]]	
 		</div>
 	</div>
 </div>

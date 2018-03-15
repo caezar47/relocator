@@ -908,6 +908,10 @@
 				padding: 2vw 2vw;
 			}
 		}
+		&.is--action{
+			padding-top: 0;
+			padding-bottom: 0;
+		}
 		&.is--business{
 		    border-bottom: 3px solid @b-color-a;
 		    background-repeat: no-repeat;
@@ -936,6 +940,11 @@
 		}
 	}
 	&panel-inner{
+		&.is--action{
+			@media @media-point-notsmart {
+				max-width: 500px;
+			}
+		}
 	}
 }
 .form__{
@@ -1018,6 +1027,14 @@
 				}
 			}
 		}
+		&.is--action{
+			&.is--radio{
+				.makeCols(12, 12);
+				@media @media-point-screen {
+					.makeCols(6, 12);
+				}				
+			}
+		}
 	}
 	&item{
 		position: relative;
@@ -1091,7 +1108,10 @@
 			border-width: @form_control_border_width;
 			border-style: solid;
 			border-color: @form_control_border_color;
-			border-radius: @form_control_border_radius - 20;	
+			border-radius: @form_control_border_radius - 20;
+			&.is--reviews{
+				//height: 150px;
+			}	
 		}
 		&.is--select{
 			//border-radius: @form_control_border_radius - 20;  
@@ -1153,6 +1173,9 @@
 				}
 			}
 		}
+	}
+	&radio{
+
 	}
 	&switch{
 		padding-top: 10px;    
@@ -2327,6 +2350,18 @@ body.rtl .formError .formErrorArrow {
 		@media @media-point-screen {
 			padding-top: 4.7vw;
 		}
+		@media @media-point-tablet {			
+			padding-left: 4vw;
+			padding-right: 4vw;
+		}
+		@media @media-point-md2 {			
+			padding-left: 4vw;
+			padding-right: 4vw;
+		}
+		@media @media-point-lg {			
+			padding-left: 4vw;
+			padding-right: 4vw;
+		}
 	}
 	&slider-desc-elem{
 		margin-bottom: 5px;
@@ -3208,6 +3243,8 @@ body.rtl .formError .formErrorArrow {
 		}
 		h2, h3, h4, h5{
 			margin-bottom: 20px;
+			color: @b-color-a;
+			font-weight: 700;
 		}
 		ol{
 			& > li{margin-bottom: 10px}
