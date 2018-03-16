@@ -22,4 +22,73 @@
 			});		
 		}
 	);
+
+	/*$(document).ready(function() {
+	    var container = $('.owl-objacts.is--cat');
+
+
+	    container.isotope({
+	        animationEngine: 'best-available',
+	        animationOptions: {
+	            duration: 200,
+	            queue: false
+	        },
+	        layoutMode: 'fitRows'
+	    });
+
+	    $('.card-item__card.is--objacts-cat').click(function() {
+	        $('.card-item__card.is--objacts-cat').removeClass('active');
+	        $(this).addClass('active');
+	        var selector = $(this).attr('data-filter');
+	        container.isotope({
+	            filter: selector
+	        });
+	        setProjects();
+	        return false;
+	    });
+
+	    function splitColumns() {
+	        var winWidth = $(window).width(),
+	            columnNumb = 1;
+
+
+	        if (winWidth > 1024) {
+	            columnNumb = 4;
+	        } else if (winWidth > 900) {
+	            columnNumb = 2;
+	        } else if (winWidth > 479) {
+	            columnNumb = 2;
+	        } else if (winWidth < 479) {
+	            columnNumb = 1;
+	        }
+
+	        return columnNumb;
+	    }
+		
+	    function setColumns() {
+	        var winWidth = $(window).width(),
+	            columnNumb = splitColumns(),
+	            postWidth = Math.floor(winWidth / columnNumb);
+
+	        container.find('.portfolio-item').each(function() {
+	            $(this).css({
+	                width: postWidth + 'px'
+	            });
+	        });
+	    }
+
+	    function setProjects() {
+	        setColumns();
+	        container.isotope('reLayout');
+	    }
+
+	    container.imagesLoaded(function() {
+	        setColumns();
+	    });
+
+
+	    $(window).bind('resize', function() {
+	        setProjects();
+	    });
+	});*/
 })();
