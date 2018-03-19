@@ -449,16 +449,17 @@
 .mix-btn-slider() {	
 	position: absolute;
 	z-index: 6;
-	width: 36px;
-	height: 36px;
+	width: 40px;
+	height: 40px;
 	padding: 8px;
-	border-radius: 50%;
+	border-radius: 5px;
 	color: @white;
 	transition: @trs-site;
-	border-width: 2px;
+	/*border-width: 2px;
 	border-style: solid;
-	border-color: @b-color-a;
+	border-color: @b-color-a;*/
 	background-color: @b-color-a;
+	background-color: #7b7b7b;
 	top: 50%;
 	transform: translateY(-50%);
 	&.is--prev{
@@ -468,9 +469,9 @@
 		right: 5px;
 	}
 	@media @media-point-screen {
-		width: 52px;
-		height: 52px;
-		padding: 10px;	
+		//width: 52px;
+		//height: 52px;
+		//padding: 10px;	
 		&.is--prev{
 			left: 2.7vw;
 		}

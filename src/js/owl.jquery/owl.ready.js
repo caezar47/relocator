@@ -1,8 +1,8 @@
 'use strict';
 $(function() {
 	$('.owl-slider').owlCarousel({
-		//navText: ['<svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev"></use></svg>', '<svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next"></use></svg> '],
-		navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-next"></use></svg> '],
+		//navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-next"></use></svg> '],
+		navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/relocator/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/relocator/img/svg/sprite.svg#carousel-next"></use></svg> '],
 		nav: true,
 		dots: true,
 		smartSpeed: 500,
@@ -20,8 +20,8 @@ $(function() {
 		}
 	});
 	$('.owl-objacts').owlCarousel({
-		//navText: ['<svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev"></use></svg>', '<svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next"></use></svg> '],
-		navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-next"></use></svg> '],
+		//navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-next"></use></svg> '],
+		navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/relocator/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/relocator/img/svg/sprite.svg#carousel-next"></use></svg> '],
 		nav: true,
 		dots: false,
 		smartSpeed: 500,
@@ -42,8 +42,8 @@ $(function() {
 		}
 	});
 	$('.owl-partners').owlCarousel({
-		//navText: ['<svg class="icon-svg icon-owl-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-prev"></use></svg>', '<svg class="icon-svg icon-owl-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#owl-next"></use></svg> '],
-		navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-next"></use></svg> '],
+		//navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite.svg#carousel-next"></use></svg> '],
+		navText: ['<svg class="icon-svg icon-carousel-prev" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/relocator/img/svg/sprite.svg#carousel-prev"></use></svg>', '<svg class="icon-svg icon-carousel-next" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/relocator/img/svg/sprite.svg#carousel-next"></use></svg> '],
 		nav: true,
 		dots: false,
 		mouseDrag: false,
